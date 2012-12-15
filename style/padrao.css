@@ -71,6 +71,7 @@ form .black-button
 form .black-button:hover {
 	background: #000;
 }
+
 /* BOTÃO CLEAN */
 form .clean-button
 {
@@ -92,6 +93,19 @@ form .clean-button
 }
 form .clean-button:hover {
 	background: #F4F4F4;
+}
+
+#whoisonline thead tr td {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 17px;
+	color: #f00;
+	border-bottom: 1px solid #efefef;
+}
+
+#whoisonline tr {
+	letter-spacing: 1px;
+	font-family: arial;
+	font-size: 12px;
 }
 /**
   * Header
@@ -256,8 +270,8 @@ form .clean-button:hover {
 }
 .users-online-count
 {
-	cursor: pointer;
 	color: #355F9D;
+	text-decoration: none;
 }
 /**
   * Conteudo

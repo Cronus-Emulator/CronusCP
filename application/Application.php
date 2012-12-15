@@ -20,7 +20,8 @@
 		'app' => require_once( 'Application/Global.php' ),
 		'menu' => require_once( 'Application/Menu.php' ),
 		'mysql' => require_once( 'Application/MySql.php' ),
-		'account' => require_once( 'Application/Account.php' )
+		'account' => require_once( 'Application/Account.php' ),
+		'class' => require_once( 'Application/Classes.php' )
 	);
 
 ?>

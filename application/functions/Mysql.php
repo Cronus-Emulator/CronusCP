@@ -24,6 +24,7 @@
 		public	function	__construct( $config )
 		{
 			$this->db = $config;
+			$this->dbConn();
 		}
 		/**
 		  * @nome: dbConn
@@ -94,8 +95,7 @@
 		  */
 		public	function	mysql_fetchassoc()
 		{
-			$b = mysql_fetch_assoc( $this->query ) or die( mysql_error() );
-			return $b;
+			return mysql_fetch_assoc($this->query);
 		}
 		
 		

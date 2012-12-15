@@ -1,0 +1,377 @@
+@charset "utf-8";
+/* CSS Document */
+/**
+  * Global
+  */
+body 
+{
+	background:url(img/background.jpg);
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	font-size: 13px;
+	color: #305A9A;
+	margin-bottom: 20px;
+}
+
+.float-right 
+{
+	float: right;
+}
+
+.float-left 
+{
+	float: left;
+}
+
+form 
+{
+	padding-top: 6px;
+	margin-top: 6px;
+	border-top: 1px dashed #E8E6E6;
+}
+input 
+{
+	outline: none;
+}
+form input[type="text"], input[type="password"] 
+{
+	color:#999;
+	padding-left: 5px;
+	padding-right: 5px;
+	height: 28px;
+	border: 1px solid #ccc;
+	transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+}
+form input[type="text"]:focus, input[type="password"]:focus
+{
+	color:#333;
+	border: 1px solid #0CF;
+	-webkit-box-shadow: 0px 0px 5px #B3D9FF
+}
+/* BOTÃO PRETO */
+form .black-button
+{
+	padding: 6px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background: #333;
+	color: #fff;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	cursor: pointer;
+	border: 1px solid #000;
+	-webkit-box-shadow: 1px 1px 0px #666666 inset;
+	margin-right: 2px;
+	margin-top: 3px;
+}
+form .black-button:hover {
+	background: #000;
+}
+/* BOTÃO CLEAN */
+form .clean-button
+{
+	padding: 6px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background: #eee;
+	color: #666;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: 1px 1px 0px #fff inset;
+	margin: 3px;
+	text-shadow: 1px 1px 0px #fff;
+	margin-right: 2px;
+	margin-top: 3px;
+}
+form .clean-button:hover {
+	background: #F4F4F4;
+}
+/**
+  * Header
+  */
+#header 
+{
+	width: 782px;
+	height: 300px;
+	background:url(img/header.png);
+	margin: 0 auto;
+}
+/**
+  * Menu
+  */
+#menu 
+{
+	background:url(img/menu-transparent.png);
+	border-bottom: 1px solid #5481C5;
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	top: 0;
+	background: #000;
+}
+.menuFix 
+{
+	width: 762px;
+	padding-left: 20px;
+	margin: 0 auto;
+	line-height: 39px;
+}
+#menu ul 
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#menu ul li 
+{
+	display: inline;
+	margin-right: 5px;
+}
+#menu ul li a 
+{
+	color: #DAE4F3;
+	text-decoration: none;
+	padding: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+#menu ul li a:hover 
+{
+	color: #fff;
+}
+.submenu-link
+{
+	color: #DAE4F3;
+	text-decoration: none;
+	padding: 5px;
+	padding-left: 12px;
+	padding-right: 12px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.submenu-link:hover
+{
+	color: #fff;
+}
+#sub-menu 
+{
+	width: 762px;
+	height: 28px;
+	position: fixed;
+	top: 50;
+	left: 50%;
+	margin-left: -391;
+	background:url(img/black-transparent.png);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	line-height: 27px;
+	padding-left: 20px;
+	display: none;
+}
+#sub-menu ul 
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#sub-menu ul li 
+{
+	display: inline;
+	margin-right: 3px;
+}
+#sub-menu ul li a 
+{
+	color: #fff;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 5px;
+	padding-bottom: 6px;
+	text-decoration: none;
+}
+#sub-menu ul li a:hover 
+{
+	background: #000;
+}
+/**
+  * Server Status
+  */
+#server-status 
+{
+	background: #fff;
+	width: 180px;
+	height: 100px;
+	padding: 10px;
+	float: right;
+	margin-top: 180px;
+	margin-right: 10px;
+	-webkit-border-radius: 3px 3px 0px 0px;
+	-moz-border-radius: 3px 3px 0px 0px;
+	border-radius: 3px 3px 0px 0px;
+}
+#j-status 
+{
+	width: 180px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 19px;
+	color: #333333;
+	margin-bottom: 3px;
+	padding-bottom: 3px;
+	float: left;
+}
+.status-offline 
+{
+	background:url(img/icon-off.png);
+	background-position: 160px 2px;
+	background-repeat: no-repeat;
+}
+.status-online 
+{
+	background:url(img/icon-on.png);
+	background-position: 160px 2px;
+	background-repeat: no-repeat;
+}
+.border-dashed-bottom 
+{
+	border-bottom: 1px dashed #E8E6E6;
+}
+#users-online
+{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 17px;
+	margin-left: 40px;
+	color: #333333;
+}
+.users-online-count
+{
+	cursor: pointer;
+	color: #355F9D;
+}
+/**
+  * Conteudo
+  */
+#content 
+{
+	width: 766px;
+	min-height: 200px;
+	background: #fff;
+	margin: 0 auto;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 8px;
+}
+#yellow-box 
+{
+	padding: 3px;
+	background: #FCEBD1;
+	border: 1px solid #F2BD67;
+	-webkit-box-shadow: 0px 3px 3px #E9E9E9;
+	-moz-box-shadow: 0px 3px 3px #E9E9E9;
+	box-shadow: 0px 3px 3px #E9E9E9;
+}
+#yellow-box .title 
+{
+	height: 36px;
+	line-height: 34px;
+	padding-left: 10px;
+	background:url(img/yellow-bg.jpg);
+	background-repeat: repeat-x;
+	border: 1px solid #E8B45C;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 22px;
+	color: #9A681D;
+	text-shadow: 1px 1px 0px #FCEBD1;
+	margin-bottom: 3px;
+}
+#yellow-box .msg 
+{
+	color: #99671D;
+	margin: 5px;
+	padding-bottom: 5px;
+	font-size: 12.4px;
+	letter-spacing: 1px;
+	border-bottom: 1px solid #F9DDAE;
+}
+#yellow-box .button-actions
+{
+	margin: 5px;
+}
+#yellow-box .button-box
+{
+	height: 28px;
+	background:url(img/bg-button-yellow.jpg);
+	background-repeat: repeat-x;
+	border: 1px solid #E8B45C;
+	color: #99661D;
+	text-shadow: 1px 1px 0px #FCEBD1;
+	font-family: 'Cagliostro', sans-serif;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+#yellow-box .button-box:hover
+{
+	color: #563A10;
+}
+#content-title
+{
+	color: #365F9D;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 22px;
+	margin: 3px;
+	padding-bottom: 6px;
+	border-bottom: 1px dashed #E8E6E6;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+#content-html
+{
+	color: #333;
+	font-family: 'Balthazar', serif;
+	font-size: 18px;
+	margin: 3px;
+	padding-bottom: 3px;
+}
+/**
+  * Rodapé
+  */
+#rodape
+{
+	width: 772px;
+	min-height: 40px;
+	background: #F4F4F4;
+	margin: 0 auto;
+	margin-top: 4px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 7px;
+	color: #666;
+	text-shadow: 1px 1px 0px #fff;
+}
+/**
+  * CSS de Outras páginas
+  */
+.inputDesc {
+	font-size: 14px;
+	color:#666;
+}

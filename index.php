@@ -2,6 +2,7 @@
 
 	// Sistema trabalhando
 	DEFINE( 'IS_RUN', true );
+	header( "Content-Type: text/html; charset=utf8", true );
 	
 	/** 
 	  * Configurações
@@ -20,7 +21,6 @@
 	$core = new core( $config );
 	// Mysql.php
 	$mysql = new mysql( $config[ 'mysql' ] );
-	$mysql->dbConn();
 	// Stuff.php
 	$stuff = new stuff();
 	
@@ -28,6 +28,7 @@
 	$key = "6LccYdoSAAAAANC-9VnOVIXO7F1XSo9CCYtqcR6s";
 	$app = $core->appConfig();
 	$menu = $core->menuConfig();
+	$class = $core->classData();
 	
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -110,10 +111,8 @@
         <div id="j-status" class="status-offline">Servidor de Login:</div>
         <div id="j-status" class="status-offline">Servidor de Char:</div>
         <div id="j-status" class="status-online border-dashed-bottom">Servidor de Map:</div>
-        <?php
-			if( $app[ 'user_online_count' ] == true ):
-		?>
-		<div id="users-online">Usuários Online: <span class="users-online-count" title="Clique para ver a lista"><?=$stuff->countUsersOnline();?></span></div>
+        <?php if( $app[ 'user_online_count' ] == true ): ?>
+		<div id="users-online">Usuários Online: <a href="?page=whoisonline" class="users-online-count" title="Clique para ver a lista"><?=$stuff->countUsersOnline();?></a></div>
 		<?php endif; ?>
       </div>
     </div>

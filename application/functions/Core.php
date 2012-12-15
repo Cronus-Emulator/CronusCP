@@ -65,6 +65,17 @@
 		}
 		
 		/**
+		  * @nome: classData
+		  * @parametros: ()
+		  * @retorno: (array)
+		  * @descrição: retorna uma array com as profissões
+		  */
+		public	function	classData()
+		{
+			return $this->conf[ 'class' ];
+		}
+		
+		/**
 		  * @nome: requireCssFile
 		  * @parametros: ( <caminho do arquivo> )
 		  * @retorno: void
@@ -92,6 +103,17 @@
 			else
 				$set = "<script type='text/javascript' src='{$jsfile}'></script>\n";
 			print( $set );
+		}
+		
+		/**
+		  * @nome: setCod
+		  * @parametros: ( <codificação> )
+		  * @retorno: string
+		  * @descrição: troca a codificação da página
+		  */
+		public	function	setCod( $cod )
+		{
+			return header( "Content-Type: text/html; charset={$cod}", true );
 		}
 		  
 	}

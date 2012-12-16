@@ -65,6 +65,8 @@ form .black-button
 	cursor: pointer;
 	border: 1px solid #000;
 	-webkit-box-shadow: 1px 1px 0px #666666 inset;
+	-moz-box-shadow: 1px 1px 0px #666666 inset;
+	box-shadow: 1px 1px 0px #666666 inset;
 	margin-right: 2px;
 	margin-top: 3px;
 }
@@ -86,6 +88,8 @@ form .clean-button
 	cursor: pointer;
 	border: 1px solid #ccc;
 	-webkit-box-shadow: 1px 1px 0px #fff inset;
+	-moz-box-shadow: 1px 1px 0px #fff inset;
+	box-shadow: 1px 1px 0px #fff inset;
 	margin: 3px;
 	text-shadow: 1px 1px 0px #fff;
 	margin-right: 2px;

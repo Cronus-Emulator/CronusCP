@@ -9,7 +9,7 @@
         </tr>
     </thead><?php
 
-	$sql = $mysql->mysqlQuery( 'SELECT `name`,`class`,`last_map` FROM `char`' );
+	$sql = $mysql->mysqlQuery( 'SELECT `name`,`class`,`last_map` FROM `char` WHERE `online`=1' );
 	$sql = $mysql->mysqlExecute();
 	while( $player = $mysql->mysql_fetchassoc() )
 	{

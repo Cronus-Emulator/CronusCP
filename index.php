@@ -126,7 +126,10 @@
     <!-- -->
     <!-- CONTENT -->
     <div id="content">
-      <!-- VISITANT MESSAGE -->
+      <?php
+		if( !$stuff->isLoggedIn() ):
+	  ?>
+	  <!-- VISITANT MESSAGE -->
       <div id="yellow-box">
       	<div class="title">Bem-vindo</div>
         <div class="msg">
@@ -139,6 +142,9 @@ sua senha</b>, <b>resetar sua posição</b> e muito mais!
         </div>
       </div>
       <!-- -->
+	  <?php
+		endif;
+	  ?>
       <div id="contentText">
       	<?php
 			if( !isset( $_GET[ 'page' ] ) )

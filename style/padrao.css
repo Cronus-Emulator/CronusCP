@@ -70,7 +70,8 @@ form .black-button
 	margin-right: 2px;
 	margin-top: 3px;
 }
-form .black-button:hover {
+form .black-button:hover 
+{
 	background: #000;
 }
 
@@ -95,18 +96,51 @@ form .clean-button
 	margin-right: 2px;
 	margin-top: 3px;
 }
-form .clean-button:hover {
+form .clean-button:hover 
+{
 	background: #F4F4F4;
 }
 
-#whoisonline thead tr td {
+.badge {
+	padding: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #fff;
+}
+
+.badge-green 
+{
+	background: #A7E651;
+	-webkit-box-shadow: 4px 4px 4px #8CDD20 inset;
+	-moz-box-shadow: 4px 4px 4px #8CDD20 inset;
+	box-shadow: 4px 4px 4px #8CDD20 inset;
+}
+
+.badge-red
+{
+	background: #CE2B2B;
+	-webkit-box-shadow: 4px 4px 4px #B92626 inset;
+	-moz-box-shadow: 4px 4px 4px #B92626 inset;
+	box-shadow: 4px 4px 4px #B92626 inset;
+}
+
+.corner-3
+{
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#whoisonline thead tr td 
+{
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 17px;
 	color: #f00;
 	border-bottom: 1px solid #efefef;
 }
 
-#whoisonline tr {
+#whoisonline tr 
+{
 	letter-spacing: 1px;
 	font-family: arial;
 	font-size: 12px;
@@ -389,7 +423,8 @@ form .clean-button:hover {
 /**
   * CSS de Outras páginas
   */
-.inputDesc {
+.inputDesc 
+{
 	font-size: 14px;
 	color:#666;
 }

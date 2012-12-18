@@ -5,9 +5,11 @@
 	{
 		exit( "<a href=\"install\">Instalar CronusCP.</a>" );
 	}
+	
 	// Sistema trabalhando
 	DEFINE( 'IS_RUN', true );
 	header( "Content-Type: text/html; charset=utf8", true );
+	session_start();
 	
 	/** 
 	  * Configurações

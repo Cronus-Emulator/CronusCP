@@ -119,7 +119,7 @@
         <div id="j-status" class="status-offline">Servidor de Char:</div>
         <div id="j-status" class="status-online border-dashed-bottom">Servidor de Map:</div>
         <?php if( $app[ 'user_online_count' ] == true ): ?>
-		<div id="users-online">Usuários Online: <a href="?page=whoisonline" class="users-online-count" title="Clique para ver a lista"><?=$stuff->countUsersOnline();?></a></div>
+		<div id="users-online">Usuários Online: <a href="?page=whoisonline" class="users-online-count" title="Clique para ver a lista"><?php echo $stuff->countUsersOnline(); ?></a></div>
 		<?php endif; ?>
       </div>
     </div>

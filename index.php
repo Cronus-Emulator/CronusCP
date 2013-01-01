@@ -133,7 +133,7 @@
       <div id="yellow-box">
       	<div class="title">Bem-vindo</div>
         <div class="msg">
-        	Bem-vindo jogador ! Registre-se no painel e obtenha acesso a todos os módulos. Você poderá se <b>cadastrar</b>, <b>criar contas</b>, <b>alterar
+        	Bem-vindo, jogador! Registre-se no painel e obtenha acesso a todos os módulos. Você poderá se <b>cadastrar</b>, <b>criar contas</b>, <b>alterar
 sua senha</b>, <b>resetar sua posição</b> e muito mais!
 		</div>
         <div class="button-actions">

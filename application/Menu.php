@@ -14,7 +14,10 @@
 		'Ranking' => array(
 			'Top Zeny' => 'topzeny',
 			'Top Level' => 'toplevel',
-			'Top Clã' => 'topclan'
+			'Top Clã' => 'topclan',
+			'Top Poções' => 'topcreator',
+			'Top Forja' => 'topws',
+			'Top Taekwon' => 'toptk'
 		),
 	);
 

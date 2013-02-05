@@ -1,0 +1,14 @@
+language: php
+php:
+  - 5.2
+  - 5.3
+  - 5.4
+env:
+  - DB=mysql
+notifications:
+  email:
+    recipients:
+      - roberto@forbrazil.com.br
+      - carlos.lain@virtuati.com.br
+      - schrwaizer@hotmail.com
+      - caiomfajardo@live.com

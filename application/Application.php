@@ -17,11 +17,11 @@
 	
 	// Configurações
 	$config = array(
-		'app' => require_once( 'Application/Global.php' ),
-		'menu' => require_once( 'Application/Menu.php' ),
-		'mysql' => require_once( 'Application/MySql.php' ),
-		'account' => require_once( 'Application/Account.php' ),
-		'class' => require_once( 'Application/Classes.php' )
+		'app' => require_once( 'application/Global.php' ),
+		'menu' => require_once( 'application/Menu.php' ),
+		'mysql' => require_once( 'application/MySql.php' ),
+		'account' => require_once( 'application/Account.php' ),
+		'class' => require_once( 'application/Classes.php' )
 	);
 
 ?>

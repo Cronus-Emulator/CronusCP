@@ -9,12 +9,6 @@ Caso tenha dúvidas, procure ajuda no forum. Qualquer bug favor reportar [aqui](
 E caso queira candidatar-se a uma vaga na equipe de desenvolvimento, preencha [este formulário](http://forum.cronus-emulator.com/index.php?app=contato).
 
 --------------
-Estado da funcionalidade atual:
-
-[![Build Status](https://travis-ci.org/Cronus-Emulator/CronusCP.png?branch=master)](https://travis-ci.org/Cronus-Emulator/CronusCP)
-
---------------
-
 
 Equipe de Desenvolvimento
 ------
@@ -27,11 +21,9 @@ Equipe de Desenvolvimento
 
 ### Desenvolvedores
 - Axl
-- Cainho
 - I am Cold
 - Merakk
 - Meyk
+- Otonii
 - Raizen
-- Sayros
-- Tywin Lannister
 - Yum
